@@ -1,0 +1,139 @@
+﻿/*
+    Es usado para afectar a todo el documento. 
+* {
+}
+    
+*/
+
+
+/*
+    ***********************************
+    PARA MAS DETALLES VER PDF FLEX-GRID
+    ***********************************
+*/
+
+
+.estilosBase{
+    height: 500px;
+    background-color: palegreen;
+}
+
+
+/*
+    ***********************************
+    FLEX
+    ***********************************
+*/
+
+/*
+    flex es util para posicionar items que tengan los mismos tamaños
+*/
+
+.contenedorFlex {
+    display: flex;
+    /*en caso de que los divs queden "apretados" pondra los sobrantes en la siguiente linea*/
+    flex-wrap: wrap;
+    /*permite elegir como se colocaran los divs (lineas o columnas)*/
+    flex-flow: row;
+    /*permite ajustar en el eje X (izquierda derecha)*/
+    justify-content: space-between;
+    /*permite ajustar en el eje Y (arriba abajo)*/
+    align-items: center;
+}
+
+.itemFlex{
+    /*en flex usamos el width en los items para seleccionar su tamaño*/
+    width: 30%;
+    height: 100px;
+}
+
+
+/*
+    ***********************************
+    GRID
+    ***********************************
+*/
+
+/*
+    grid es util para posicionar items que tengan distintos tamaños
+*/
+
+.contenedorGrid {
+    display: grid;
+
+    /*de esta forma tendremos 4 columnas una de 10% otra de 25% otra de 200px y una ultima que ocupe el resto*/
+    grid-template-columns: 10% 25% 200px auto;
+
+    /*de esta forma tendremos 2 filas una de 20% y una ultima que ocupe el resto*/
+    grid-template-rows: 20% auto;
+
+    /*separacion entre divs. se pueden especificar tambien solo columnas (grid-column-gap) o solo filas (grid-row-gap)*/
+    grid-gap: 10px;
+}
+
+
+/*
+    ***********************************
+    CLASICO
+    ***********************************
+*/
+
+/*
+    no se lo que hago :(
+*/
+
+.itemClassic{
+    height: 100px;
+    width: 100px;
+}
+
+.divClass1 {
+    /*fija el div en una posicion*/
+    position: absolute;
+    left: 200px;
+}
+
+.divClass2 {
+    float: right;
+}
+
+.divClass3 {
+    /*fija el div en un punto de la pantalla*/
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.divClass4 {
+    /*fija el div en un punto de la pantalla pero sin que se pueda salir del contenedor padre*/
+    position: sticky;
+    top: 0px;
+}
+
+.divClass5 {
+    /*fija el div en un punto teniendo en cuenta su posicion original*/
+    position: relative;
+    top: 0px;
+    left: 100px;
+    background-image: url(../img/test.jpg);
+    background-size: cover;
+}
+
+
+
+.div1 {
+    background-color: lightgoldenrodyellow;
+}
+
+.div2 {
+    background-color: lightcoral;
+}
+
+.div3 {
+    background-color: lightblue;
+}
+
+.div4 {
+    background-color: lightpink;
+}
+

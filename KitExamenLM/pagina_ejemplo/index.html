@@ -1,0 +1,439 @@
+<!--para todo mas facil copia desde aqui hasta "/head"-->
+<!DOCTYPE html>
+<!--importante cambiar la opcion segun el lenguaje que utilicemos -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+
+    <!--metadatos del autor del documento IMPORTANTE CAMBIAR -->
+    <meta name="author" content="*************************************************** METER NOMBRE AQUI ***********************************************" />
+
+    <!--tag para añadir/cambiar el favicon (icono que aparece en la pestaña) -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!--tag para referenciar un css -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <meta name="keywords" content="HTML" />
+    <title>apuntes</title>
+
+    <!--tag para incluir estilos sin necesidad de archivo css separado -->
+    <style>
+        th, td {
+            border: 1px black solid;
+            padding: 1px;
+            text-align: center
+        }
+    </style>
+    <!--tag para incluir javascript sin necesidad de archivo css separado (no lo dimos lol)-->
+    <script>
+
+    </script>
+</head>
+<body>
+    <!--header para cosas importantes-->
+    <header>
+        <h1>Kit de Supervivencia para el examen de Lenguaje de Marcas</h1>
+        <p>Abrir html para ver comentarios</p>
+    </header>
+    <!--nav para el navegador...-->
+    <nav>
+        <a href="#text">Textos</a>
+        <a href="#img">Imagenes</a>
+        <a href="#table">Tabla</a>
+        <a href="#media">Media</a>
+        <a href="#form">Formulario</a>
+        <a href="#links">Enlaces</a>
+        <a href="#list">Listas</a>
+        <a href="#flex">Posicionamiento Flex</a>
+        <a href="#grid">Posicionamiento Grid</a>
+        <a href="#classic">Posicionamiento Clasico</a>
+        <a href="#useful"><b>COSAS UTILES</b></a>
+    </nav>
+    <!--apartados divididos en articles y dentro de un section -->
+    <section>
+        <!--RECORDAR id es unico para cada elemento y no se puede repetir. class se puede usar en multiples elementos -->
+        <article id="text">
+            <h3>Textos</h3>
+            <div>
+                Texto normal
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida sapien quis enim interdum maximus. Sed mattis faucibus suscipit. Fusce non velit quis arcu volutpat consectetur. Nullam semper semper lacus nec faucibus. Quisque viverra ornare neque id eleifend. Phasellus aliquam hendrerit mauris at blandit. Integer arcu magna, feugiat ac justo nec, consequat posuere libero. Morbi ultrices imperdiet iaculis. Pellentesque efficitur faucibus neque sed fermentum. Curabitur id pharetra leo. Integer vel arcu ornare, tincidunt neque vel, efficitur neque. Vivamus condimentum imperdiet gravida. Proin laoreet at nisl sed pharetra.
+                </p>
+            </div>
+            <div>
+                Texto en cursiva
+                <p>
+                    <!--mejor usar cursiva desde css -->
+                    <i>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida sapien quis enim interdum maximus. Sed mattis faucibus suscipit. Fusce non velit quis arcu volutpat consectetur. Nullam semper semper lacus nec faucibus. Quisque viverra ornare neque id eleifend. Phasellus aliquam hendrerit mauris at blandit. Integer arcu magna, feugiat ac justo nec, consequat posuere libero. Morbi ultrices imperdiet iaculis. Pellentesque efficitur faucibus neque sed fermentum. Curabitur id pharetra leo. Integer vel arcu ornare, tincidunt neque vel, efficitur neque. Vivamus condimentum imperdiet gravida. Proin laoreet at nisl sed pharetra.
+                    </i>
+                </p>
+            </div>
+            <div>
+                Texto en negrita
+                <p>
+                    <!--mejor usar negrita desde css -->
+                    <b>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida sapien quis enim interdum maximus. Sed mattis faucibus suscipit. Fusce non velit quis arcu volutpat consectetur. Nullam semper semper lacus nec faucibus. Quisque viverra ornare neque id eleifend. Phasellus aliquam hendrerit mauris at blandit. Integer arcu magna, feugiat ac justo nec, consequat posuere libero. Morbi ultrices imperdiet iaculis. Pellentesque efficitur faucibus neque sed fermentum. Curabitur id pharetra leo. Integer vel arcu ornare, tincidunt neque vel, efficitur neque. Vivamus condimentum imperdiet gravida. Proin laoreet at nisl sed pharetra.
+                    </b>
+                </p>
+            </div>
+        </article>
+        <article id="img">
+            <h3>Imagenes</h3>
+            <div>
+                <!--IMPORTANTE el enlace no lleva ni ".." ni "/" delante -->
+                <img src="img/test.jpg" width="300px" />
+                Imagen desde carpeta
+            </div>
+            <div>
+                <img src="https://img.wattpad.com/cover/149071975-352-k852771.jpg" width="300px" />
+                Imagen desde internet
+            </div>
+        </article>
+        <article id="table">
+            <h3>Tabla</h3>
+            <div>
+                <table>
+                    <!--caption muestra un titulo para la tabla -->
+                    <caption>Caption</caption>
+                    <!--thead, tbody y tfoot no afectan visualmente, es necesario ponerlos-->
+                    <thead>
+                        <tr>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum</td>
+                            <td rowspan="3">Lorem ipsum</td>
+                            <td colspan="2">Lorem ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum</td>
+                            <td colspan="2">Lorem ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <article id="media" class="test">
+            <h3>Media</h3>
+            <div>
+                <!--se pueden añadir multiples sources con distintos formatos IMPORTANTE especificarlos -->
+                <video width="560px" height="315px" controls>
+                    <source src="" type="video/mp4">
+                    <source src="" type="video/mpeg">
+                    Your browser does not support the video tag.
+                </video>
+                Video desde archivo
+            </div>
+            <div>
+                <!--se pueden añadir multiples sources con distintos formatos IMPORTANTE especificarlos -->
+                <audio controls>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                Audio
+            </div>
+            <div>
+                <!--para obtenerlo entramos en el video de youtube, compartir, insertar y copiamos el codigo html-->
+                <iframe width="560px" height="315px" src="https://www.youtube.com/watch?v=DLzxrzFCyOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                Video desde youtube
+            </div>
+            <div>
+                <!--para obtenerlo entramos en la direccion de maps, compartir, insertar en un mapa y copiamos el codigo html-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24788577.044506863!2d-26.779077516392437!3d40.67508502636721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e27feec39ba75%3A0x64cd2dc31b3592a8!2sAmogus%20sussy%20middle-school!5e0!3m2!1ses!2ses!4v1644329383691!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                Google Maps
+            </div>
+        </article>
+        <article id="form">
+            <h3>Formulario</h3>
+            <div>
+                <form action="" method="get">
+                    <fieldset>
+                        <legend>Datos del usuario</legend>
+                        <div>
+                            <!--importante añadir los labels para "recuperar" lo que se introduzca. para enlazar se usa el "for" con el mismo id que el input -->
+                            <label for="name">
+                                Nombre*:
+                            </label>
+                            <!--required obligara que el campo sea rellenado antes de poder enviarse -->
+                            <input type="text" placeholder="Introduce tu nombre." id="name" required>
+                            <!--usando autofocus scrollea hasta este campo <input type="text" placeholder="Introduce tu nombre." id="name" autofocus required> -->
+                        </div>
+                        <div>
+                            <label for="lastName">
+                                Apellidos*:
+                            </label>
+                            <input type="text" placeholder="Introduce tus apellidos." id="lastName" required">
+                        </div>
+                        <div>
+                            <label for="nif">
+                                NIF*:
+                            </label>
+                            <!--usamos el pattern para permitir inputs especificos. en este caso tiene que tener 8 numeros seguidos de una letra. (ver documento regex) -->
+                            <input type="text" placeholder="Introduce tu NIF." id="nif" pattern="^[0-9]{8}[A-Za-z]$" required>
+                        </div>
+                        <div>
+                            <label for="bdate">
+                                Fecha de nacimiento:
+                            </label>
+                            <input type="date" id="bdate">
+                        </div>
+                        <div>
+                            <label for="img">
+                                Imagen de perfil:
+                            </label>
+                            <!--con accept permitiremos unicamente formatos especificos -->
+                            <input type="file" id="img" accept=".jpg,.png">
+                        </div>
+                        <div>
+                            <label for="sex">
+                                Sexo:
+                            </label>
+                            <!--para input type radio debemos usar el mismo name para todos para evitar el poder marcar varios a la vez -->
+                            <input type="radio" name="sex" id="sex1">
+                            Hombre
+                            <input type="radio" name="sex" id="sex2">
+                            Mujer
+                            <input type="radio" name="sex" id="sex3">
+                            Otro
+                        </div>
+                        <div>
+                            <label for="dir">
+                                Dirección:
+                            </label>
+                            <input type="text" placeholder="Introduce tu direccion." id="dir">
+                        </div>
+                        <div>
+                            <label for="tlfn">
+                                Telefono:
+                            </label>
+                            <!--otro ejemplo de pattern. admite unicamente 9 numeros (ver documento regex)-->
+                            <input type="text" placeholder="Introduce tu telefono." id="tlfn" pattern="\d{9}">
+                        </div>
+                        <div>
+                            <label for="mail">
+                                Email:
+                            </label>
+                            <input type="email" placeholder="ejemplo@ejemplo.com" id="mail">
+                        </div>
+                        <div>
+                            <label for="pl">
+                                Lenguajes de programación que domina:
+                            </label>
+                            <input type="checkbox" name="pl">
+                            JavaScript
+                            <input type="checkbox" name="pl">
+                            Python
+                            <input type="checkbox" name="pl">
+                            Java
+                            <input type="checkbox" name="pl">
+                            C#
+                            <input type="checkbox" name="pl">
+                            PHP
+                            <input type="checkbox" name="pl">
+                            Otro
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de registro</legend>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th>Franjas Horarias</th>
+                                    <th>Temas</th>
+                                </tr>
+                                <tr>
+                                    <td>09:00-11:00</td>
+                                    <td>
+                                        <label for="h1">
+                                        </label>
+                                        <select>
+                                            <!--usando selected en una opcion aparecera seleccionada por defecto -->
+                                            <option selected name="h1"></option>
+                                            <option name="h1">Opcion 1</option>
+                                            <option name="h1">Opcion 2</option>
+                                            <option name="h1">Opcion 3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11:00-13:00</td>
+                                    <td>
+                                        <label for="h2">
+                                        </label>
+                                        <select>
+                                            <option selected name="h2"></option>
+                                            <option name="h2">Opcion 1</option>
+                                            <option name="h2">Opcion 2</option>
+                                            <option name="h2">Opcion 3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15:00-17:00</td>
+                                    <td>
+                                        <label for="h3">
+                                        </label>
+                                        <select>
+                                            <option selected name="h3"></option>
+                                            <option name="h3">Opcion 1</option>
+                                            <option name="h3">Opcion 2</option>
+                                            <option name="h3">Opcion 3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>17:00-19:00</td>
+                                    <td>
+                                        <label for="h4">
+                                        </label>
+                                        <select>
+                                            <option selected name="h4"></option>
+                                            <option name="h4">Opcion 1</option>
+                                            <option name="h4">Opcion 2</option>
+                                            <option name="h4">Opcion 3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>19:00-21:00</td>
+                                    <td>
+                                        <label for="h5">
+                                        </label>
+                                        <select>
+                                            <option selected name="h5"></option>
+                                            <option name="h5">Opcion 1</option>
+                                            <option name="h5">Opcion 2</option>
+                                            <option name="h5">Opcion 3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <!--boton para resetear todos los campos. con "value" cambiamos el texto que aparece -->
+                        <input type="reset" value="borrar xd">
+                        <!--boton para enviar los campos -->
+                        <input type="submit">
+                        <!--de esta forma podemos modificar el boton para que muestre una imagen. tambien se podria hacer desde css con background-image -->
+                        <button type="submit">
+                            <input type="image" src="" height="20px" />
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <article id="links">
+            <h3>Enlaces</h3>
+            <div>
+                <a href="">Enlace que sustituye la pagina</a>
+            </div>
+            <div>
+                <!--usandeo target _blank el enlace se abrira en una pestaña nueva -->
+                <a href="" target="_blank">Enlace que se abre en pagina nueva</a>
+            </div>
+            <div>
+                <!--IMPORTANTE solo pueden usarse id para ir a otros puntos de la pagina -->
+                <a href="#text">Enlace a un "id" (Apartado Textos)</a>
+            </div>
+        </article>
+        <article id="list">
+            <h3>Listas</h3>
+            <div>
+                Lista no ordenada
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+            </div>
+            <div>
+                Lista ordenada
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+            </div>
+            <div>
+                Lista de descripcion
+                <dl>
+                    <dt>Coffee</dt>
+                    <dd>black hot drink</dd>
+                    <dd>black hot drink</dd>
+                    <dt>Milk</dt>
+                    <dd>white cold drink</dd>
+                </dl>
+            </div>
+        </article>
+        <article id="flex">
+            <h3>Posicionamiento Flex</h3>
+            <!--podemos incluir multiples clases separandolas por un espacio. en este caso tenemos "estilosbase" y "contenedorFlex"-->
+            <div class="estilosBase contenedorFlex">
+                <div class="div1 itemFlex">1</div>
+                <div class="div2 itemFlex">2</div>
+                <div class="div3 itemFlex">3</div>
+                <div class="div4 itemFlex">4</div>
+            </div>
+        </article>
+        <article id="grid">
+            <h3>Posicionamiento Grid</h3>
+            <div class="estilosBase contenedorGrid">
+                <div class="div1 itemGrid">1</div>
+                <div class="div2 itemGrid">2</div>
+                <div class="div3 itemGrid">3</div>
+                <div class="div4 itemGrid">4</div>
+                <div class="div1 itemGrid">5</div>
+                <div class="div2 itemGrid">6</div>
+                <div class="div3 itemGrid">7</div>
+                <div class="div4 itemGrid">8</div>
+            </div>
+        </article>
+        <article id="classic">
+            <h3>Posicionamiento Clasico</h3>
+            <div class="estilosBase contenedorClasico">
+                <div class="div1 itemClassic divClass1">1</div>
+                <div class="div2 itemClassic divClass2">2</div>
+                <div class="div3 itemClassic divClass3">soy de posicionamiento clasico lol. baja para saber mas</div>
+                <div class="div4 itemClassic divClass4">4</div>
+                <div class="div4 itemClassic divClass5">5</div>
+            </div>
+        </article>
+        <article id="useful">
+            <h3>Cosas Utiles</h3>
+            <div>
+                <a href="https://www.w3schools.com/html/" target="_blank">W3School HTML</a>
+                <a href="https://www.w3schools.com/css/default.asp" target="_blank">W3School CSS</a>
+                <a href="https://cssgrid-generator.netlify.app/" target="_blank">Generador de posicionamiento grid</a>
+                <a href="https://regex101.com/" target="_blank">Verificador de expresiones regex</a>
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS/position" target="_blank">Ejemplo visual posicionamiento clasico</a>
+            </div>
+            <!--NO USAR BR-->
+            <br />
+            <embed src="../apuntes/html5.pdf" width="24%" height="800px" />
+            <embed src="../apuntes/css3.pdf" width="24%" height="800px" />
+            <embed src="../apuntes/flex-grid.pdf" width="24%" height="800px" />
+            <embed src="../apuntes/regex.pdf" width="24%" height="800px" />
+        </article>
+    </section>
+    <!--footer para creditos, enlaces a redes sociales, derechos de autor... -->
+    <footer>
+    </footer>
+</body>
+</html>

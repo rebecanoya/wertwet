@@ -1,0 +1,295 @@
+/*Header*/
+
+
+.logo{
+    width: 250px;
+}
+
+
+/* Menu*/
+.menuLink:hover{
+    transform: scale(1.1);
+    color:lightcyan;
+}
+
+#dropdown {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+}
+
+.menuImgDiv{
+    background-color: cornflowerblue;
+    width: 60px;
+    height: auto;
+    z-index: 10;
+    position: relative;
+    box-shadow: 2px 0px;
+    border-radius: 10px;
+}
+
+.dropdownContainer {
+    width: 100%;
+    position: absolute;
+    height: 65.5px;
+    top: 0%;
+    left: -92.5%;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    font-size: 20px;
+    z-index: 1;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+  }
+  
+.dropdownContentContainer {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 65.5px;
+    margin-left: 5%;
+    align-items: center;
+  }
+
+.dropdownContainer:hover .menuImg{
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+}
+  
+.dropdownContainer:hover {
+    left: 0%;
+}
+
+nav{
+    font-family: TW2;
+}
+
+/*General*/
+
+.generalContainer{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.sinopContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+}
+
+/*Director*/
+
+.directorContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    justify-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/*Characters*/
+
+.chItemPos{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    justify-items: center;
+}
+
+.charactersItem{
+    width: 44%;
+    margin: 1%;
+    padding: 2%;
+    box-shadow: 2px 2px;
+}
+
+.charactersContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*Stream*/
+
+th, td{
+    border: 1px black solid;
+    padding: 10px;
+    text-align: center;
+}
+#stream{
+    display: grid;
+    justify-content: center;
+}
+
+/*Media*/
+
+.mediaContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*Opinion*/
+
+.fieldsetItems{
+    width: 33%;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 250px;
+    border: 0;
+    font-family: TW2;    
+    text-align: justify;
+}
+
+textarea{
+    width: 90%;
+    height: 200px;
+    resize: none;
+}
+
+.formButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    border-style: none;
+    background: url(../img/shrekface.png);
+    background-size: cover;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-style: none;
+    background: url(../img/shrekface.png);
+    background-size: cover;
+  }
+
+/*Footer*/
+footer {
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    padding-right: 20px;
+    text-shadow: 2px 2px 2px black;
+    background: rgb(0,171,40);
+    background: radial-gradient(circle, rgba(0,171,40,1) 0%, rgba(0,79,20,1) 100%);
+    opacity: 0.7;
+}
+
+/*Miscelaneous*/
+.button{
+    background-color: #04AA6D;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;border: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+.imgBorder{
+    border: 2px black solid;
+}
+
+iframe{
+    border: 2px black solid;
+}
+
+p{
+    font-family: TW2;    
+    text-align: justify;
+    margin-top: 0;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+article{
+    background-color: bisque;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-top: 2px solid black;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    margin: 0px;
+    background-color: coral;
+    background: url(../img/bg.jpg);
+}
+
+* {
+    cursor: url(../img/cursor/Shrek.cur), default;
+	scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: TW2;
+    src: url(../fonts/tw2.ttf);
+}
+
+@keyframes rainbow {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+  
+ 
